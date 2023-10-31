@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 
 #-----The '#' followed by SBATCH are SLURM prefixes. They are not comments-----#
 #-----It is worth taking note of them when you write your own batch files------#

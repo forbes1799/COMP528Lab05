@@ -10,11 +10,11 @@ int main(void){
 
     double tStart;
     double tEnd;
-	
+	/*Set up MPI Environment here*/
     int count = 0;
     for(count; count < REPEAT; count++){
 		
-		/*Set up MPI Environment here*/
+		
 	
     	tStart = MPI_Wtime();
     	
@@ -26,9 +26,10 @@ int main(void){
 		printf("COUNT = %d\n", count);
 		printf("Time taken = %f milliseconds\n", 1000.0*(tEnd - tStart));	//print wallTimeTaken
 
-		/*Finalise MPI Environment here*/
+		
 
 	}
+	/*Finalise MPI Environment here*/
 }
 
 void integrationPTP(int commSize, int myRank){
